@@ -1,12 +1,12 @@
 def solution(participant, completion):
-    hashTable = {}
+    hash_table = {}
     
     for p in participant:
-        hashTable[p] = hashTable.get(p, 0) + 1
+        hash_table[p] = hash_table.get(p, 0) + 1
         
     for c in completion:
-        hashTable[c] -= 1
+        hash_table[c] -= 1
     
-    for name, count in hashTable.items():
+    for name, count in hash_table.items():
         if count:
             return name
