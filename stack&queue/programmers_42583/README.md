@@ -27,8 +27,6 @@ solution 함수의 매개변수로 다리에 올라갈 수 있는 트럭 수 bri
 - truck_weights의 길이는 1 이상 10,000 이하입니다.
 - 모든 트럭의 무게는 1 이상 weight 이하입니다.
 
-<br/>
-
 ### 입출력 예
 
 |bridge_length|weight|truck_weights|return|
