@@ -10,26 +10,22 @@ An input string is valid if:
 
 ### Example 1
 
-Input: s = "()"
-
+Input: s = "()"<br>
 Output: true    
 
 ### Example 2
 
-Input: s = "()[]{}"
-
+Input: s = "()[]{}"<br>
 Output: true
 
 ### Example 3
 
-Input: s = "(]"
-
+Input: s = "(]"<br>
 Output: false
 
 ### Example 4
 
-Input: s = "([])"
-
+Input: s = "([])"<br>
 Output: true
 
 ### Constraints:
