@@ -39,5 +39,3 @@ After removing outer parentheses of each part, this is "" + "" = "".
 - ```1 <= s.length <= 10^5```
 - ```s[i]``` is either ```'('``` or ```')'```.
 - ```s``` is a valid parentheses string.
-
-Follow up: Can you solve it in ```O(n)``` time and ```O(1)``` space?
