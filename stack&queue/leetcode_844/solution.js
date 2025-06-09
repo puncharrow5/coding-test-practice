@@ -24,8 +24,8 @@ var backspaceCompare = function(s, t) {
         }
     }
     
-    const stringifyS = stackS.toString();
-    const stringifyT = stackT.toString();
+    const stringifyS = stackS.join('');
+    const stringifyT = stackT.join('');
 
     if(stringifyS === stringifyT) return true
     
