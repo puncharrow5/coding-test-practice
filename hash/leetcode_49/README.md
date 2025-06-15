@@ -28,6 +28,12 @@ Output: [["a"]]
 
 ### Constraints:
 
-- ```1 <= strs.length <= 104```
+- ```1 <= strs.length <= 10^4```
 - ```0 <= strs[i].length <= 100```
 - ```strs[i]``` consists of lowercase English letters.
+
+### Follow up:
+
+- A straightforward solution using ```O(mn)``` space is probably a bad idea.
+- A simple improvement uses ```O(m + n)``` space, but still not the best solution.
+- Could you devise a constant space solution?
