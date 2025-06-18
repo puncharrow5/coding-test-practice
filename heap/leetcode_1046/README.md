@@ -1,31 +1,32 @@
-# Relative Ranks (LeetCode 506)
+# Last Stone Weight (LeetCode 1046)
 
-You are given an integer array ```score``` of size ```n```, where ```score[i]``` is the score of the ```ith``` athlete in a competition. All the scores are guaranteed to be unique.
+You are given an array of integers ```stones``` where ```stones[i]``` is the weight of the ```ith``` stone.
 
-The athletes are ***placed*** based on their scores, where the ```1st``` place athlete has the highest score, the ```2nd``` place athlete has the ```2nd``` highest score, and so on. The placement of each athlete determines their rank:
+We are playing a game with the stones. On each turn, we choose the ***heaviest two stones*** and smash them together. Suppose the heaviest two stones have weights ```x``` and ```y``` with ```x <= y```. The result of this smash is:
 
-- The ```1st``` place athlete's rank is ```"Gold Medal"```.
-- The ```2nd``` place athlete's rank is ```"Silver Medal"```.
-- The ```3rd``` place athlete's rank is ```"Bronze Medal"```.
-- For the ```4th``` place to the ```nth``` place athlete, their rank is their placement number (i.e., the ```xth``` place athlete's rank is ```"x"```).
+- If ```x == y```, both stones are destroyed, and
+- If ```x != y```, the stone of weight ```x``` is destroyed, and the stone of weight ```y``` has new weight ```y - x```.
 
-Return an array ```answer``` of size ```n``` where ```answer[i]``` is the rank of the ```ith``` athlete.
+At the end of the game, there is ***at most one*** stone left.
+
+Return the weight of the last remaining stone. If there are no stones left, return ```0```.
 
 ### Example 1
 
-Input: score = [5,4,3,2,1]<br>
-Output: ["Gold Medal","Silver Medal","Bronze Medal","4","5"]<br>
-Explanation: The placements are [1st, 2nd, 3rd, 4th, 5th].<br>
+Input: stones = [2,7,4,1,8,1]<br>
+Output: 1<br>
+Explanation: <br>
+We combine 7 and 8 to get 1 so the array converts to [2,4,1,1,1] then,<br>
+we combine 2 and 4 to get 2 so the array converts to [2,1,1,1] then,<br>
+we combine 2 and 1 to get 1 so the array converts to [1,1,1] then,<br>
+we combine 1 and 1 to get 0 so the array converts to [1] then that's the value of the last stone.
 
 ### Example 2
 
-Input: score = [10,3,8,9,4]<br>
-Output: ["Gold Medal","5","Bronze Medal","Silver Medal","4"]<br>
-Explanation: The placements are [1st, 5th, 3rd, 2nd, 4th].
+Input: stones = [1]<br>
+Output: 1
 
 ### Constraints:
 
-- ```n == score.length```
-- ```1 <= n <= 10^4```
-- ```0 <= score[i] <= 10^6```
-- All the values in ```score``` are ***unique***.
+- ```1 <= stones.length <= 30```
+- ```1 <= stones[i] <= 1000```
