@@ -19,7 +19,7 @@ var deleteGreatestValue = function(grid) {
             maxValue = Math.max(maxValue, grid[i][j])
         }
 
-        result += maxValue
+        result += maxValue;
     }
 
     return result;
