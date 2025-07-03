@@ -1,21 +1,21 @@
 # Valid Palindrome II (LeetCode 680)
 
-Given a string ```s```, return ```true``` if the ```s``` can be palindrome after deleting at most one character from it.
+Given a string ```s```, return ```true``` if the ```s``` can be palindrome after deleting ***at most one*** character from it.
 
 ### Example 1
 
-Input: s = "aba"
+Input: s = "aba"<br>
 Output: true
 
 ### Example 2
 
-Input: s = "abca"
-Output: true
+Input: s = "abca"<br>
+Output: true<br>
 Explanation: You could delete the character 'c'.
 
 ### Example 3
 
-Input: s = "abc"
+Input: s = "abc"<br>
 Output: false
 
 ### Constraints:
