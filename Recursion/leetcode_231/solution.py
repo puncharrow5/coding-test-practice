@@ -3,13 +3,10 @@ class Solution:
         if n == 1:
             return True
 
-        if n <= 0:
+        if n <= 0 or n % 2 != 0:
             return False
+        
+        return self.isPowerOfTwo(n // 2)
+    
 
-        while n > 1:
-            if n % 2 == 1:
-                return False
-            
-            n /= 2
 
-        return True
